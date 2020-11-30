@@ -1,0 +1,41 @@
+@import "home.css";
+@import "card.css";
+@import "post.css";
+@import "footer.css";
+@import "nav-bar.css";
+
+html {
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+    color: #222;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+}
+
+a {
+    color: #54A7B9;
+    text-decoration: none;
+}
+
+p {
+    margin: 2px 0 ;
+}
+
+h1 {
+    color: #54A7B9;
+}
+
+h3 {
+    margin: 2px 0;
+}
+
+h4 {
+    margin: 6px 0;
+}
+
+.underlined {
+    text-decoration: underline;
+}

@@ -1,0 +1,80 @@
+.card {
+    height: 530px;
+    width: 90%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(10, 1fr);
+    grid-template-areas:
+        "ba"
+        "ba"
+        "ba"
+        "ba"
+        "ba"
+        "ba"
+        "txt"
+        "txt"
+        "txt"
+        "action";
+    box-shadow: 0 5px 15px 0 rgba(153,153,153,0.5);
+    border-radius: 4px;
+    margin: 12px 0;
+}
+
+.card-header{
+    grid-area: ba;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-header-1 {
+    background-image: url(../assets/images/aurora-5599375_640.jpg);
+}
+
+#card-header-2 {
+    background-image: url(../assets/images/buildings-5655593_640.jpg);
+}
+
+#card-header-3 {
+    background-image: url(../assets/images/daisy-5679389_640.jpg);
+}
+
+#card-header-4 {
+    background-image: url(../assets/images/flowering-dogwood-5772385_640.jpg);
+}
+
+#card-header-5 {
+    background-image: url(../assets/images/landscape-5000655_640.jpg);
+}
+
+#card-header-6 {
+    background-image: url(../assets/images/sahara-3436700_640.jpg);
+}
+
+.card-content{
+    padding: 8px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    grid-area: txt;
+}
+
+.card-subtitle{
+    margin-top: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card-action {
+    padding: 3px 8px;
+    grid-area: action;
+    display: flex;
+    align-items: center;
+}
+
+.card-link {
+    color: #54A7B9;
+    text-decoration: none;
+}

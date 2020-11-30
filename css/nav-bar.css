@@ -1,0 +1,58 @@
+.nav-bar {
+    background-color: aliceblue;
+}
+
+.blog-title {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.search-section {
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .nav-bar {
+        display: grid;
+        grid-template-columns: 80% 20%;
+        grid-template-rows: 1fr;
+        grid-template-areas:
+            "title search";
+        justify-content: center;
+        align-items: center;
+    }
+
+    .blog-title {
+        justify-self: start;
+        grid-area: title;
+        margin-left: 7%;
+    }
+
+    .search-section {
+        display: flex;
+        align-items: center;
+        grid-area: search;
+        margin-right: 8px;
+    }
+
+    .search-field {
+        display: flex;
+        border: 2px solid #c0c6d2;
+        border-radius: 6px;
+        width: 140px;
+        height: 30px;
+        background-color: white;
+        text-align: start;
+        justify-content: space-between;
+        align-items: center;
+        color: #c0c6d2;
+        padding: 0 3px;
+    }
+
+    .search-icon {
+        color: #c0c6d2;
+        filter: brightness(85%);
+        height: 30px;
+    }
+}
